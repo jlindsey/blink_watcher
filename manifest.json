@@ -1,6 +1,6 @@
 {
   "name": "Blink Watcher",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Watches SOMER.blink for promos and alerts you.",
   "icons": {
     "16": "favicon.png",
@@ -14,7 +14,8 @@
   },
   "permissions": [
     "http://cogdev.net/blink*",
-    "notifications"
+    "notifications",
+    "cookies"
   ]
 }
 
