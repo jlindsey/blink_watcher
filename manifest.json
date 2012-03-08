@@ -2,6 +2,7 @@
   "name": "Blink Watcher",
   "version": "1.0.0",
   "description": "Watches SOMER.blink for promos and alerts you.",
+  "update_url": "http://blink-watcher.herokuapp.com/updates.xml",
   "icons": {
     "16": "favicon.png",
     "48": "icon48.png",
