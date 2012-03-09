@@ -47,7 +47,7 @@ class Application
       id = $('form#featured_blink > :input[name="blinkID"]', @page).val()
      
       # Check to see if the active blink has already been entered
-      current_check = ($('#featured_scroll > p:content("Your Ticket Number")', @page).length > 0)
+      current_check = ($('#featured_scroll > p:contains("Your Ticket Number")', @page).length > 0)
 
       # Only notify once per promo
       return if current_check or @last_notified_id == id
