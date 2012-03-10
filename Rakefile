@@ -16,7 +16,8 @@ task :build do
   puts "Compiling HAML"
   Dir['src/haml/*.haml'].each do |haml_file|
     puts "Compiling #{haml_file}"
-    `haml -f html5 src/haml/*.haml build/#{File.basename(haml_file).sub('.haml', '.html')}`
+    src = File.basename(haml_file).sub('.haml', '.html')
+    `haml -f html5 src/haml/#{File.basename(haml_file)} build/#{src}`
   end
 end
 
