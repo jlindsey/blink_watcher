@@ -5,6 +5,11 @@ Watches [SOMER.blink](http://cogdev.net/blink) for promos and alerts you via Chr
 
 Also plays a sound if you want.
 
+Changelog
+---------
+
+Available at [http://blink-watcher.herokuapp.com](http://blink-watcher.herokuapp.com).
+
 Development
 -----------
 
