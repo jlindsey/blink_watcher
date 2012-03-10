@@ -60,7 +60,7 @@ class Application
       this.notify "New Promo: #{ship}!", "As of #{date_string} there is a #{ship} promo active!", "#{@blink_url}/?#blink_#{id}"
 
   notify: (title, body, click_url = false) ->
-    n = webkitNotifications.createNotification '/icon48.png', title, body
+    n = webkitNotifications.createNotification '/resources/img/icon48.png', title, body
 
     if click_url
       n.onclick = ->
