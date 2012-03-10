@@ -68,6 +68,11 @@ class Application
         n.cancel()
 
     n.show()
+    this.play_alert()
+
+  play_alert: ->
+    if localStorage['play_sounds']
+      document.getElementById('alert_sound').play()
 
   run: ->
     callback = =>
