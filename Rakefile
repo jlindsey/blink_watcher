@@ -1,5 +1,6 @@
 desc "Clean out build/ directory"
 task :clean do
+  puts "Cleaning build/"
   `rm -rf build/*`
 end
 
@@ -22,6 +23,7 @@ task :build do
 end
 
 task :default => :build
+task :rebuild => [:clean, :build]
 
 desc "Watch src directory for changes and auto recompile (CoffeeScript only)"
 task :watch do
