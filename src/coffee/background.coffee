@@ -18,7 +18,7 @@ class Application
         @page = $(data)
 
   check_logged_in: ->
-    if $('#blink_logged_out', @page).length > 0
+    if $('div#blink_logged_out', @page).length > 0
       chrome.browserAction.setBadgeBackgroundColor color: [255, 0, 0, 255]
       chrome.browserAction.setBadgeText text: ":("
 
